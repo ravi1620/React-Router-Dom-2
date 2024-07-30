@@ -47,7 +47,7 @@ console.log(loc)
   return (
     <div className='App'>
         <Navigation></Navigation>
-<h1>{loc&&loc.state&&loc.state.msg ? loc.state.msg:"No Message to Disaply here"}</h1>
+<h1>{loc&&loc.state&&loc.state.msg ? loc.state.msg:"No Message to Display here"}</h1>
         
         <form className='form'>
             <div>
@@ -55,7 +55,7 @@ console.log(loc)
                 <input type='text' ref={firstNameInputRef}
                 onChange={()=>{
                 
-                    validateFirstName(firstNameInputRef.current.vlaue,firstNameResultRef);
+                    validateFirstName(firstNameInputRef.current.value,firstNameResultRef);
                 }}
                 minLength="2" maxLength="20"></input>
                 <span ref={firstNameResultRef}></span>
